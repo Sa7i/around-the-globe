@@ -1,5 +1,5 @@
-
 import './App.css';
+import Login from './components/Login/Login';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
           className="font-bold">
           Learn React with me
         </a>
+        <Login />
       </header>
     </div>
   );
