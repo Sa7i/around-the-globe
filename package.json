@@ -13,9 +13,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "concurrently \"npm --prefix ./around-frontend run dev\" \"npm --prefix ./around-backend run dev\"",
-    "dev-front": "npm --prefix ./around-frontend run dev",
-    "dev-back": "npm --prefix ./around-backend run dev",
+    "start": "concurrently \"npm --prefix ./frontend run dev\" \"npm --prefix ./backend run dev\"",
+    "dev-front": "npm --prefix ./frontend run dev",
+    "dev-back": "npm --prefix ./backend run dev",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
