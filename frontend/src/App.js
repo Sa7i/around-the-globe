@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <a
           className="font-bold">
-          Learn React
+          Learn React with me
         </a>
       </header>
     </div>
