@@ -5,10 +5,10 @@ const db = connection.promise();
 const validate = (data, forCreation = true) => {
     return Joi.object({
         username: Joi.string().min(3).max(30).required(),
-    }).validate(data, {abortEarly: false}).error;
+    }).validate(data, { abortEarly: false }).error;
 }
 
-findByUsername = (username) => {
+const findByUsername = (username) => {
     console.log("FIND BY USERNAME");
     return db.query('SELECT * FROM usernames WHERE username=?', [username]);
 }
