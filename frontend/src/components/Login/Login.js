@@ -25,7 +25,7 @@ function Login() {
   }
 
   return (
-    <div className="w-screen h-screen bg-blue-500 flex justify-center items-center ">
+    <div className="w-screen h-screen bg-[#18608C] flex justify-center items-center ">
       <div className="shadow-md rounded-lg bg-white p-6">
         {/* <form onSubmit={handleSubmit}> */}
         <div className="text-center">

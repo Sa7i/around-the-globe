@@ -4,6 +4,7 @@ import CapitalLogo from '../../images/Capitals.png'
 import { NavLink } from 'react-router-dom';
 
 
+
 const SelectGame = () => {
 
 
@@ -24,6 +25,8 @@ const SelectGame = () => {
                     </div>
                     <p>CAPITALS</p>
                 </NavLink>
+                <div>
+                </div>
             </div>
         </div>
     );
