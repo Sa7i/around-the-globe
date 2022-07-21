@@ -4,6 +4,8 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage/HomePage';
 import SelectGame from './components/SelectGame/SelectGame';
+import CountriesGame from './components/CountriesGame/CountriesGame';
+import CapitalsGame from './components/CapitalsGame/CapitalsGame';
 
 function App() {
 
@@ -14,9 +16,9 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/select" element={<SelectGame />} />
+        <Route path='countries-quiz' element={<CountriesGame />} />
+        <Route path='/capitals-quiz' element={<CapitalsGame />} />
       </Routes>
-      {/* <Login /> */}
-      
     </div>
   );
 }
