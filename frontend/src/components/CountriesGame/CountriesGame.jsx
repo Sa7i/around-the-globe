@@ -39,7 +39,9 @@ const CountriesGame = () => {
         while (randomFlags.length < 4) {
             let randNum = Math.floor(Math.random() * data?.length - 1);
             if (randomFlags.indexOf(randNum) === -1) {
+                // if (randomFlags.includes(data?.[randNum])) {
                 randomFlags.push(data?.[randNum]);
+                // }
             }
         }
         return randomFlags
@@ -83,14 +85,9 @@ const CountriesGame = () => {
     const handleFail = (e) => {
         if (e.target.value !== answer?.name) {
             setFail(fail + 1)
-        } else {
-            setFail(fail)
-        }
-    }
-
-    const handlePopup = () => {
-        if (fail === 3) {
-            setShowPopup(true)
+            if (fail === 2) {
+                setShowPopup(true)
+            }
         }
     }
 
@@ -99,7 +96,6 @@ const CountriesGame = () => {
         handleScore(e)
         handleFail(e)
         disableButtonColor(e)
-        handlePopup()
     }
 
     useEffect(() => {
@@ -132,9 +128,9 @@ const CountriesGame = () => {
                 </div>
             </div>
             <div className='flex justify-center items-center overflow-x-hidden p-12'>
-                <div className='shadow-lg '>
+                <div className='shadow-lg h-[300px] w-[500px]'>
                     <img src={answer?.flag} alt=""
-                        className='w-[500px] h-[330px] flex items-center' />
+                        className='w-[100%] h-[100%] flex items-center' />
                 </div>
             </div>
             <div className="grid overflow-hidden grid-cols-2 grid-rows-2 gap-1 absolute inset-x-0 bottom-0 text-md">

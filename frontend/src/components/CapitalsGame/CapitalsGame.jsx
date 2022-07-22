@@ -83,23 +83,19 @@ const CapitalsGame = () => {
     const handleFail = (e) => {
         if (e.target.value !== answer?.capital) {
             setFail(fail + 1)
-        } else {
-            setFail(fail)
+            if (fail === 2) {
+                setShowPopup(true)
+            }
         }
     }
 
-    const handlePopup = () => {
-        if (fail === 3) {
-            setShowPopup(true)
-        }
-    }
 
     const handleClick = (e) => {
         checkAnswer(e)
         handleScore(e)
         handleFail(e)
         disableButtonColor(e)
-        handlePopup()
+
     }
 
     useEffect(() => {
