@@ -7,6 +7,7 @@ import SelectGame from './components/SelectGame/SelectGame';
 import CountriesGame from './components/CountriesGame/CountriesGame';
 import CapitalsGame from './components/CapitalsGame/CapitalsGame';
 import TimeAttack from './components/TimeAttack/TimeAttack';
+import WinPage from './components/WinPage/WinPage';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path='countries-quiz' element={<CountriesGame />} />
         <Route path='/capitals-quiz' element={<CapitalsGame />} />
         <Route path='/time-attack' element={<TimeAttack />} />
+        <Route path='/victory' element={<WinPage />} />
       </Routes>
     </div>
   );

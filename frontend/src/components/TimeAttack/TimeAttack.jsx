@@ -77,12 +77,6 @@ const TimeAttack = () => {
         }
     }
 
-    const handleWin = () => {
-        if (score === 50) {
-            window.location.href = '/select'
-        }
-    }
-
     // FAIL SCORE.
     const handleFail = (e) => {
         if (e.target.value !== answer?.name) {
@@ -112,7 +106,7 @@ const TimeAttack = () => {
 
     useEffect(() => {
         fetchCountries()
-        handleWin()
+
     }, [score])
 
     useEffect(() => {
@@ -128,13 +122,13 @@ const TimeAttack = () => {
 
 
     return (
-        <div className='bg-[#18608C] h-screen overflow-hidden font-inter font-semibold'>
+        <div className='bg-[#18608C] h-screen overflow-hidden font-manrope font-[700]'>
             <div className='bg-white h-[80px] text-black shadow-xl'>
                 <div>
                 </div>
                 <div className='flex justify-between items-center p-4 gap-5'>
                     <NavLink to='/select'>
-                        <div className=' bg-[#18608C] rounded-xl p-3 px-6 shadow-xl flex gap-2 items-center text-white'>
+                        <div className=' bg-[#18608C] hover:bg-[#4194c8] duration-300 rounded-xl p-3 px-6 shadow-xl flex gap-2 items-center text-white'>
                             <p>Back</p>
                         </div>
                     </NavLink>
@@ -158,7 +152,7 @@ const TimeAttack = () => {
                         className='w-[100%] h-[100%] flex items-center' />
                 </div>
             </div>
-            <div className="grid overflow-hidden grid-cols-2 grid-rows-2 gap-1 absolute inset-x-0 bottom-0 text-md">
+            <div className="grid overflow-hidden grid-cols-2 grid-rows-2 gap-1 absolute inset-x-0 bottom-0">
                 {randomFlag?.map((flag, index) => (
                     <button key={index} value={flag?.name}
                         className="bg-white p-8 rounded-lg"

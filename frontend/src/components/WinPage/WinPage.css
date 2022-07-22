@@ -1,0 +1,16 @@
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(20%);
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.Container {
+    animation: slideInFromTop 600ms ease-in-out;
+}
