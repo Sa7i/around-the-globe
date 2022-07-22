@@ -3,6 +3,7 @@ import CountryLogo from '../../images/Countries.png'
 import CapitalLogo from '../../images/Capitals.png'
 import { NavLink } from 'react-router-dom';
 import { TimerIconBlack } from '../../utils/svg';
+// import './SelectGame.css';
 
 
 
@@ -10,7 +11,7 @@ const SelectGame = () => {
 
 
     return (
-        <div className='bg-[#18608C] h-screen w-full flex flex-col items-center justify-center gap-6 font-manrope font-[500]'>
+        <div className='Select-container bg-[#18608C] h-screen w-full flex flex-col items-center justify-center gap-6 font-manrope font-[500]'>
             <div className='flex justify-center bg-white p-3 rounded-xl text-xl w-[200px] '>
                 Select Category
             </div>
