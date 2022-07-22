@@ -6,6 +6,7 @@ import HomePage from './components/HomePage/HomePage';
 import SelectGame from './components/SelectGame/SelectGame';
 import CountriesGame from './components/CountriesGame/CountriesGame';
 import CapitalsGame from './components/CapitalsGame/CapitalsGame';
+import TimeAttack from './components/TimeAttack/TimeAttack';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/select" element={<SelectGame />} />
         <Route path='countries-quiz' element={<CountriesGame />} />
         <Route path='/capitals-quiz' element={<CapitalsGame />} />
+        <Route path='/time-attack' element={<TimeAttack />} />
       </Routes>
     </div>
   );
